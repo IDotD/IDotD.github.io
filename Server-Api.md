@@ -57,7 +57,30 @@ This is a shortened example for Jormungan. Other raid-bosses follow the same str
 
 # Users Service
 
-provides access to register platform names and request known ones
+provides access to register platform names and request known ones.
+
+## Add
+
+A get-request to add a username, that is appended as the next "folder" in this request. Does not return anything.
+
+## Get
+
+A get-request, that returns a list of users grouped by their kong-names. This is meant to be called multiple types to update the content on the client's side.
+
+A single user's data is grouped by his lower-case kongregate username and then in turn has a supobject for each server that he is on. These objects provide the following keys:
+
+- guildId : int : the id ugup gave the guid
+- id : int : the id of the user, needed to link to the profile for example
+- level : int : the last known level
+- updated : string : and sql-style timestamp of the last sucessful update
+- class : int : the class-id of the user
+- name : string : the ingame name of the user
+- 7day: int : levels gained during the last 7 days
+- 30day: int : levels gained during the last 30 days
+
+### Example
+
+`{"bjalpha":{"kongregate":{"guildId":"645","id":"27341","level":"2658","updated":"2016-07-24 16:07:01","class":"12","name":"Idrinth","7day":"31","30day":"344"},"world":{"guildId":"0","id":"39135125","level":"7","updated":"2016-07-25 07:52:01","class":"3","name":"i","7day":"0","30day":"0"}}}` 
 
 # War Service
 
