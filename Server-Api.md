@@ -82,6 +82,14 @@ A single user's data is grouped by his lower-case kongregate username and then i
 
 `{"bjalpha":{"kongregate":{"guildId":"645","id":"27341","level":"2658","updated":"2016-07-24 16:07:01","class":"12","name":"Idrinth","7day":"31","30day":"344"},"world":{"guildId":"0","id":"39135125","level":"7","updated":"2016-07-25 07:52:01","class":"3","name":"i","7day":"0","30day":"0"}}}` 
 
+## Init
+
+Reduces pseudo-static data, that is not meant to be requeried. This is a list of guild names and class names.
+
+### Example
+
+`{"classes":{"4":"Adventurer"},"guilds":{"kongregate":{"0":"[Sytem:Guildless]"},"world":{"0":"[System Guildless""}}}`
+
 # War Service
 
 access to war raids and war statistics
