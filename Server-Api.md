@@ -42,7 +42,9 @@ provides raids to join
 
 # I am alive
 
-a single call for tracking purposes - see if there's anyone using the script
+A single call for tracking purposes, to see if there's anyone using the script. It takes a pseudeo UUID as the next part of the path and returns nothing. UUIDs are checked to match the following regex:
+
+`^[a-z0-9]{4}-[a-z0-9]{8}-[a-z0-9]{12}-[a-z0-9]{16}-[a-z0-9]{20}-[a-z0-9]{24}$`
 
 # Tiers Service
 
