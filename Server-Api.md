@@ -4,9 +4,23 @@ For the following api-calls assume lower case and spaces replaced by hyphens. Ur
 
 This group of services handles everything chat related. These do return error-object with the keys success, message and possibly login.
 
-Success will be false in case of errors and if it is an error that will likely e solved by logging in again, login will be set to true.
+Success will be false in case of errors and if it is an error that will likely be solved by logging in again, login will be set to true.
 
 ## Accounts
+
+Get all required information about logged-in users, including yourself. This takes no additional payload of any kind.
+
+The members object contains the rank of each user, organised by chat and then user, while the users object contains a list of active platforms and the user's name.
+
+### Example
+
+Chat 17 with user 1:
+
+`{"self":1,"members":{17:{1:Owner}},"users":{1:{name:"Idrinth",platforms:{"k":true,"f":false,"a":false,"n":true}}}`
+
+### Other Responses
+
+`{"success":false,"message":"please login again","login":true}`
 
 ## Create
 
