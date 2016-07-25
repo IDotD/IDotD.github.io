@@ -1,15 +1,8 @@
-The server provides the following endpoints for userscript access:
+For the following api-calls assume lower case and spaces replaced by hyphens. Urls are therefore build starting with /[server] and adding in the headers related to the task, for example /kongregate/chat-service/update/ .
 
-- /[server]/chat-service/ handles everything chat related
-- /[server]/raid-service/ provides raids to join
-- /[server]/i-am-alive/ a single call for tracking purposes - see if there's anyone using the script
-- /[server]/tier-service/ provides the raid's tier data
-- /[server]/users-service/ provides access to register platform names and request new ones
-- /[server]/war-service/ access to war raids and war statistics
+# Chat Service
 
-# Chat
-
-The chat api is located at /[server]/chat-service/ and has the following tasks related to it:
+This group of services handles everything chat related.
 
 ## Accounts
 
@@ -26,3 +19,23 @@ The chat api is located at /[server]/chat-service/ and has the following tasks r
 ## Register
 
 ## Update
+
+# Raid Service
+
+provides raids to join
+
+# I am alive
+
+a single call for tracking purposes - see if there's anyone using the script
+
+# Tier Service
+
+provides the raid's tier data
+
+# Users Service
+
+provides access to register platform names and request known ones
+
+# War Service
+
+access to war raids and war statistics
