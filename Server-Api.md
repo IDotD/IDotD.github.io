@@ -32,6 +32,29 @@ Takes the chat-id as the next path-part and deletes a chat if you are an Owner.
 
 ## Rank
 
+Changes the rank of a specific user in a specific chat. Chat and user to be changed need to be submitted as a json encoded value of the header Idrinth-Addition.
+
+Possible ranks are:
+- Banned
+- ''       //self-kicking from chats without ban
+- User
+- Mod
+- Owner
+
+### Example:
+
+`Idrinth-Addition: {"user":1,chat:"1","access":""}`
+
+### Responses
+
+`{"success":false,"message":"please login again","login":true}`
+
+`{"success":false,"message":"the message didn't use an allowed format"}`
+
+`{"success":false,"message":"you can not change this user's rights in the desired way')`
+
+`{"success":true,"message":"User's rights changed"}`
+
 ## Register
 
 ## Update
