@@ -161,7 +161,26 @@ This handles the sending of new messages as well as retrieving messages send by 
 
 # Raid Service
 
-provides raids to join
+
+The Information about what raids to join is supplied with an added path-part of comma seperated favorite-ids. Also the Idrinth-Addition-header is send with ids of already joined raids to reduce overhead.
+
+If a known raid is dead it'll be readded with the property "delete" and the value 1 in it to clean it out of the known raids client side.
+
+### Example
+
+URL: `https://dotd.idrinth.de/kongregate/raid-service/1,3,99/`
+
+`Idrinth-Addition: [11,23,45,56,78678,678,678]`
+
+### Responses
+
+#### No raids
+
+`{}`
+
+#### Raids
+
+`{"12345":{"difficulty":1,"name":"MySummoner","raid":"Horgrak","aid":12345,"raidId":889,"hash":"wx9g"}}`
 
 # I am alive
 
