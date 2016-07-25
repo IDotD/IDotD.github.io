@@ -2,7 +2,9 @@ For the following api-calls assume lower case and spaces replaced by hyphens. Ur
 
 # Chat Service
 
-This group of services handles everything chat related.
+This group of services handles everything chat related. These do return error-object with the keys success, message and possibly login.
+
+Success will be false in case of errors and if it is an error that will likely e solved by logging in again, login will be set to true.
 
 ## Accounts
 
