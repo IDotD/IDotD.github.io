@@ -30,9 +30,30 @@ provides raids to join
 
 a single call for tracking purposes - see if there's anyone using the script
 
-# Tier Service
+# Tiers Service
 
-provides the raid's tier data
+Provides all raid's tier data in a json object of raid-objects. This is a GET request, that does not take any additional parameters.
+
+The key for those objects is the lower case name combines with the lower case short name if they differ sufficiently.
+Jormungan has the key "jormungan the sea-storm", while "Badland Ambusher (Badlands)" is providing both version since they differ.
+On the upper level each objects provides the following fields:
+
+- name : string : the actual long name of the raid
+- url : string : the image's name
+- n : int[] : Array of damage tiers for normal difficulty
+- h : int[] : Array of damage tiers for harddifficulty
+- l : int[] : Array of damage tiers for legendary difficulty
+- nn : int[] : Array of damage tiers for nightmare difficulty
+- epics : int{} : an object mirroring the tier structure with the amount of epics instead of required damage
+- os : int{} : optimal share values for each difficulty
+- fs : int{} : fair share for each difficulty
+- ap : int : the ap-value
+
+## Example:
+
+This is a shortened example for Jormungan. Other raid-bosses follow the same structure.
+
+`{"jormungan the sea-storm":{"name":"Jormungan the Sea-Storm","url":"jormungan-294","n":[200000000,100000000000],"os":{"n":3000000000,"h":3000000000,"l":3000000000,"nm":3000000000},"fs":{"n":937500000,"h":1875000000,"l":2812500000,"nm":3750000000},"epics":{"n":["0","400"],"h":["0","400"],"l":["0","400"],"nm":["0","400"]},"h":[200000000,100000000000],"l":[200000000,100000000000],"nm":[200000000,100000000000],"ap":1875000000}}`
 
 # Users Service
 
