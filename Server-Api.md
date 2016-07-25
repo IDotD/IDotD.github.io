@@ -62,17 +62,17 @@ Sends chatjoin-data via the header Idrinth-addition and gets the necessary data 
 
 ### Responses
 
-{"success":false,"message":"please login again","login":true}
+`{"success":false,"message":"please login again","login":true}`
 
-{"success":false,"message":"the message didn't use an allowed format."}
+`{"success":false,"message":"the message didn't use an allowed format."}`
 
-{"success":false,"message":"You need to supply an ID and a password"}
+`{"success":false,"message":"You need to supply an ID and a password"}`
 
-{"success":false,"message":"You are banned from this chat"};
+`{"success":false,"message":"You are banned from this chat"}`
 
-{"success":true,"data":{"id":22,"name":"halloWelt","pass":"halloWelt"}}
+`{"success":true,"data":{"id":22,"name":"halloWelt","pass":"halloWelt"}}`
 
-{"success":false,"message":"Password and ID do not match"}
+`{"success":false,"message":"Password and ID do not match"}`
 
 ## Login
 
