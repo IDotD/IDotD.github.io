@@ -231,4 +231,22 @@ Reduces pseudo-static data, that is not meant to be requeried. This is a list of
 
 # War Service
 
-access to war raids and war statistics
+The war service returns two different king of information, for one pure statistics and tipps, including magics to use, for each boss in the war and on the other hand war raids that a person wants to join.
+
+The Information about what raids to join is supplied with an added path-part of comma seperated raid ids. Also the Idrinth-Addition-header is send with ids of already joined raids to reduce overhead.
+
+### Example
+
+URL: `https://dotd.idrinth.de/kongregate/war-service/1,3,99/`
+
+`Idrinth-Addition: [11,23,45,56,78678,678,678]`
+
+### Responses
+
+#### No war running
+
+`{}`
+
+#### War up
+
+`{"raids:{"12345":{"difficulty":1,"name":"MySummoner","raid":"Horgrak","aid":12345,"raidId":889,"hash":"wx9g"}},"stats":{"1":{"boss":1,"amount":678,"name":"Horgrak","magics":"blinding_light-125,dragons_breath-93"}}}`
