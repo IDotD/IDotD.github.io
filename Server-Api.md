@@ -10,6 +10,20 @@ Success will be false in case of errors and if it is an error that will likely e
 
 ## Create
 
+## Delete
+
+Takes the chat-id as the next path-part and deletes a chat if you are an Owner.
+
+### Responses
+
+`{"success":false,"message":"please login again","login":true}`
+
+`{"success":false,"message":"the request didn't use an allowed format"}`
+
+`{"success":false,"message":"you lack the right to delete this chat."}`
+
+`{"success":true}`
+
 ## Join
 
 ## Login
