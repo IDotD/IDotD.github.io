@@ -40,9 +40,29 @@ Takes the chat-id as the next path-part and deletes a chat if you are an Owner.
 
 ## Join
 
+Sends chatjoin-data via the header Idrinth-addition and gets the necessary data back to build the chat-gui if sucessfull.
+
+### Example
+
+`Idrinth-Addition: {"id":"22","pass":"halloWelt"}`
+
+### Responses
+
+{"success":false,"message":"please login again","login":true}
+
+{"success":false,"message":"the message didn't use an allowed format."}
+
+{"success":false,"message":"You need to supply an ID and a password"}
+
+{"success":false,"message":"You are banned from this chat"};
+
+{"success":true,"data":{"id":22,"name":"halloWelt","pass":"halloWelt"}}
+
+{"success":false,"message":"Password and ID do not match"}
+
 ## Login
 
-## MyChats
+## My cats
 
 ## Rank
 
