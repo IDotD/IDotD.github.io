@@ -135,13 +135,13 @@ A query containing a username and password in the Idrinth-Addition-header.
 
 ### Responses
 
-{"success":true,"data":MyChats()}
+`{"success":true,"data":MyChats()}`
 
-{"success":false,"message":"You need to provide data for registering in"}
+`{"success":false,"message":"You need to provide data for registering in"}`
 
-{"success":false,"message":"You need to provide data for registering in"}
+`{"success":false,"message":"You need to provide data for registering in"}`
 
-{"success":false,"message":"The given login already exists, please choose another one"}
+`{"success":false,"message":"The given login already exists, please choose another one"}`
 
 ## Update
 
