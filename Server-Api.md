@@ -36,7 +36,7 @@ Changes the rank of a specific user in a specific chat. Chat and user to be chan
 
 Possible ranks are:
 - Banned
-- ''       //self-kicking from chats without ban
+- Leave
 - User
 - Mod
 - Owner
