@@ -1,0 +1,3 @@
+- [Home](https://github.com/Idrinth/IDotD/wiki)
+- [Server Api](https://github.com/Idrinth/IDotD/wiki/Chat)
+-- [Chat](https://github.com/Idrinth/IDotD/wiki/Chat)
