@@ -10,6 +10,20 @@ Success will be false in case of errors and if it is an error that will likely e
 
 ## Create
 
+Creates a new chat with a random password and sets the creating user as chat-owner.
+
+### Example
+
+`Idrinth-Addition: my chat 9000`
+
+### Responses
+
+`{"success":false,"message":"please login again"}`
+
+`{"success":false,"message":"the message didn't use an allowed format"`
+
+`{"success":true,"data":{name:"name",access:"Owner",pass:"pass"}`
+
 ## Delete
 
 Takes the chat-id as the next path-part and deletes a chat if you are an Owner.
