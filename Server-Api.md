@@ -6,3 +6,23 @@ The server provides the following endpoints for userscript access:
 - /[server]/tier-service/ provides the raid's tier data
 - /[server]/users-service/ provides access to register platform names and request new ones
 - /[server]/war-service/ access to war raids and war statistics
+
+# Chat
+
+The chat api is located at /[server]/chat-service/ and has the following tasks related to it:
+
+## Accounts
+
+## Create
+
+## Join
+
+## Login
+
+## MyChats
+
+## Rank
+
+## Register
+
+## Update
