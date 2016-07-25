@@ -76,7 +76,29 @@ Sends chatjoin-data via the header Idrinth-addition and gets the necessary data 
 
 ## Login
 
-## My cats
+A query containing a username and password in the Idrinth-Addition-header.
+
+### Example
+
+`Idrinth-Addition: {"user":"Tester","pass":"Password"}`
+
+### Responses
+
+`{"success":false,"message":"data not provided, either username or password is empty"}`
+
+`{"success":false,"message":"User unknown, do you want to register?","allow-reg":true}`
+
+`{"success":false,"message":"Combination of username and password unknown."}`
+
+`{"success":true,"data":MyChats()}`
+
+## My chats
+
+Returns a list of all allowed chats with their names and passwords.
+
+### Example
+
+`{"1":{"access":"User","pass":"Hallo","name":"World"}}`
 
 ## Rank
 
@@ -105,7 +127,37 @@ Possible ranks are:
 
 ## Register
 
+A query containing a username and password in the Idrinth-Addition-header.
+
+### Example
+
+`Idrinth-Addition: {"user":"Tester","pass":"Password"}`
+
+### Responses
+
+{"success":true,"data":MyChats()}
+
+{"success":false,"message":"You need to provide data for registering in"}
+
+{"success":false,"message":"You need to provide data for registering in"}
+
+{"success":false,"message":"The given login already exists, please choose another one"}
+
 ## Update
+
+This handles the sending of new messages as well as retrieving messages send by others. The first are send as a json object of messages per chat, while the later is handled with sending the highest known message id.
+
+### Example
+
+`Idrinth-Addition: {"messages":[{"chat":1,"text":"Hi, anyone around?"}],"maxId":111}`
+
+### Responses
+
+`{"success":false,"message":"please login again","login":true)`
+
+`{"success":false,"message":"the message didn't use an allowed format"}`
+
+`{"messages":{"1":{"112":{"time" => "2016-07-25 15:09:08","user":1,"text":"Hi, anyone around?"}}}}`
 
 # Raid Service
 
