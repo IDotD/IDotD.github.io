@@ -159,6 +159,24 @@ This handles the sending of new messages as well as retrieving messages send by 
 
 `{"messages":{"1":{"112":{"time" => "2016-07-25 15:09:08","user":1,"text":"Hi, anyone around?"}}}}`
 
+## Whisper
+
+The whisper service takes a json-object wrapped in a post request.
+
+### Example
+
+`{"messages":[{"to":333,"message":"you there?"}],"akn:[1,3,4,55,6]}`
+
+### Responses
+
+`{"success":false,"message":"please login again","login":true)`
+
+`{"success":false,"message":"the message didn't use an allowed format"}`
+
+`{"success":false,"message":"please login again","login":true)`
+
+`[{"from":333,"message":"yes..."},{"from":23,"message":"could you kill your jorm please? it's full."}]`
+
 # Raid Service
 
 
