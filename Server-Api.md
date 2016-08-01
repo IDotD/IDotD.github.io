@@ -173,9 +173,7 @@ The whisper service takes a json-object wrapped in a post request.
 
 `{"success":false,"message":"the message didn't use an allowed format"}`
 
-`{"success":false,"message":"please login again","login":true)`
-
-`[{"from":333,"message":"yes..."},{"from":23,"message":"could you kill your jorm please? it's full."}]`
+`[{"id":11,created:"2016-08-01 00:01:09","from":333,"message":"yes..."},{"id":23,created:"2016-08-01 00:01:09","from":23,"message":"could you kill your jorm please? it's full."}]`
 
 # Raid Service
 
