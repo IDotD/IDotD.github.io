@@ -23,3 +23,9 @@ Pushes to your branch are usually deployed to it automatically within secods.
 # Server-Side changes
 
 Serverside code is not publicly accessible, so changes can only be implemented by  Idrinth. Please label your tickets accordingly, so they are easy to find.
+
+# Server-Side replacements
+
+*  ###VERSION### will be replaced with the current version, for example 1.11.9
+* ###PATH### will be replaced with the path to the resource folder of the respective branch
+* ###RELOAD-VERSION### will be replaced with either the version or if set the branch's name
