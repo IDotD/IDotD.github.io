@@ -1,4 +1,4 @@
-<code>{
+<pre><code>{
     "tabs and indents":{
         "expand tabs to spaces":true,
         "tab size":4,
@@ -89,4 +89,4 @@
         "wrap after ternary operators":false,
         "example":"var engine = {\n    cylinders: 8,\n    power: \"22k\",\n    getDescription: function () {\n        with ( this )\n            if ( !disabled )\n                println ( 'Cylinders: ' + cylinders + ' with power: ' + power );\n            else\n                log ();\n    },\n    get parameter () {\n        return power;\n    }\n}\n\nvar colors = [ 0, 1, 2 ];\nlength = colors.length ();\n\nfunction computeColor ( limit ) {\n    try {\n        color = 0;\n        for (var a = -1; a < limit; a++)\n            color += Math.round ( Math.random () * 2 );\n    } catch ( error ) {\n        error.cause ().dump ();\n    } finally {\n        log ();\n    }\n    while ( color > 100 )\n        do\n            color = ( color / 2 ) + 1;\n        while ( isOk( ) );\n    color = color < 1 ? 1 : color\n}\n\nvar a, b, c, x = function () {\n    return \"yes\"\n}\n"
     }
-}<code>
+}<code></pre>
