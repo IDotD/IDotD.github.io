@@ -18,7 +18,7 @@
 # Testing
 
 The test version of a branch is avabile at https::/dotd.idrinth.de/static/userscript/[branch] and is uncached.
-Pushes to your branch are usually deployed to it automatically within secods.
+Pushes to your branch are usually deployed to it automatically within secoNds.
 
 # Server-Side changes
 
