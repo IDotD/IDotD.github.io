@@ -13,7 +13,7 @@
 - test the changes yourself and fix any bugs you might encounter in your branch
 - check your branch with www.codacy.com and/or www.codeclimate.com if it introduces more issues than it solves
 - create a pull-request and let someone have a look
-- Valid comments to allow a commit are :shipit:, :+1:, LGTM, Approved, Looks Good To Me and need to be positioned first to be recognised
+- Valid comments to allow a commit are ":shipit:", ":+1:", "LGTM", "Approved", "Looks Good To Me". They need to be positioned first to be recognised
 - when accepting the pull-request all related tickets are closed
 
 # Testing
