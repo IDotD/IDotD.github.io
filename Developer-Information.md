@@ -1,3 +1,7 @@
+# Communication
+
+We got Slack avaible for questions and small talk, feel free to mail webmaster AT idrinth DOT de for an invitation.
+
 # Codestyle
 
 - early returns over continue
