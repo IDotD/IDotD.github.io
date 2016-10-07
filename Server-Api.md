@@ -285,3 +285,17 @@ URL: `https://dotd.idrinth.de/kongregate/war-service/1,3,99/`
 #### War up
 
 `{"raids:{"12345":{"difficulty":1,"name":"MySummoner","raid":"Horgrak","aid":12345,"raidId":889,"hash":"wx9g"}},"stats":{"1":{"boss":1,"amount":678,"name":"Horgrak","magics":"blinding_light-125,dragons_breath-93"}}}`
+
+# Add Raid Service
+
+The add raid service provides a simple option to submit raids without having to enter chats. The id and hash need to be added to the url.
+
+### Example
+
+Url: https://dotd.idrinth.de/facebook/add-raid-service/11111/9buSZIKtAJ/
+
+### Responses
+
+The response will return a boolean to signal success.
+
+`[{“11111”:false}]`
