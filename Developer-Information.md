@@ -123,6 +123,7 @@ Serverside code is not publicly accessible, so changes can only be implemented b
 
 # Server-Side replacements
 
-*  ###VERSION### will be replaced with the current version, for example 1.11.9
+* ###VERSION### will be replaced with the current version, for example 1.11.9
 * ###PATH### will be replaced with the path to the resource folder of the respective branch
 * ###RELOAD-VERSION### will be replaced with either the version or if set the branch's name
+* ###LANG### will be replaces with the contents of languages/en.json
