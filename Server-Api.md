@@ -227,7 +227,7 @@ On the upper level each objects provides the following fields:
 
 This is a shortened example for Jormungan. Other raid-bosses follow the same structure.
 
-`{"jormungan the sea-storm":{"name":"Jormungan the Sea-Storm","url":"jormungan-294","n":[200000000,100000000000],"os":{"n":3000000000,"h":3000000000,"l":3000000000,"nm":3000000000},"fs":{"n":937500000,"h":1875000000,"l":2812500000,"nm":3750000000},"epics":{"n":["0","400"],"h":["0","400"],"l":["0","400"],"nm":["0","400"]},"h":[200000000,100000000000],"l":[200000000,100000000000],"nm":[200000000,100000000000],"ap":1875000000}}`
+`{"jormungan the sea-storm":{"name":"Jormungan the Sea-Storm","url":"jormungan-294","n":[200000000,100000000000],"os":{"n":3000000000,"h":3000000000,"l":3000000000,"nm":3000000000},"fs":{"n":937500000,"h":1875000000,"l":2812500000,"nm":3750000000},"epics":{"n":["0","400"],"h":["0","400"],"l":["0","400"],"nm":["0","400"]},"h":[200000000,100000000000],"l":[200000000,100000000000],"nm":[200000000,100000000000],"ap":1875000000,"types":["dragon","aquatic"]}}`
 
 # Users Service
 
