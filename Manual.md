@@ -6,7 +6,7 @@
     * [Why use a raidcatcher?](#why-use-a-raidcatcher)
     * [What other raidcatchers are there?](#what-other-raidcatchers-are-there)
 * [Installation & Setup](#installation--setup)
-    * [A Monkey ?](#a-monkey)
+    * [A Monkey?](#a-monkey)
     * [Installing the script](#installing-the-script)
     * [Where do I find it now?](#where-do-i-find-it-now)
 
