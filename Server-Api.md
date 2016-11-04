@@ -1,8 +1,8 @@
-For the following api-calls assume lower case and spaces replaced by hyphens. Urls are therefore build starting with /[server] and adding in the headers related to the task, for example /kongregate/chat-service/update/ .
+For the following API-calls assume lower case and spaces replaced by hyphens. URLs are therefore build starting with /[server] and adding in the headers related to the task, for example /kongregate/chat-service/update/ .
 
 # Chat Service
 
-This group of services handles everything chat related. These do return error-object with the keys success, message and possibly login.
+This group of services handles everything chat-related. These do return error-object with the keys success, message and possibly login.
 
 Success will be false in case of errors and if it is an error that will likely be solved by logging in again, login will be set to true.
 
@@ -178,9 +178,9 @@ The whisper service takes a json-object wrapped in a post request.
 # Raid Service
 
 
-The Information about what raids to join is supplied with an added path-part of comma seperated favorite-ids. Also the Idrinth-Addition-header is send with ids of already joined raids to reduce overhead.
+The information about what raids to join is supplied with an added path-part of comma seperated favorite-ids. Also the Idrinth-Addition-header is send with ids of already joined raids to reduce overhead.
 
-If a known raid is dead it'll be readded with the property "delete" and the value 1 in it to clean it out of the known raids client side.
+If a known raid is dead it'll be re-added with the property "delete" and the value 1 in it to clean it out of the known raids client side.
 
 ### Example
 
@@ -200,7 +200,7 @@ URL: `https://dotd.idrinth.de/kongregate/raid-service/1,3,99/`
 
 # I am alive
 
-A single call for tracking purposes, to see if there's anyone using the script. It takes a pseudeo UUID as the next part of the path and returns nothing. UUIDs are checked to match the following regex:
+A single call for tracking purposes, to see if there's anyone using the script. It takes a pseudo UUID as the next part of the path and returns nothing. UUIDs are checked to match the following regex:
 
 `^[a-z0-9]{4}-[a-z0-9]{8}-[a-z0-9]{12}-[a-z0-9]{16}-[a-z0-9]{20}-[a-z0-9]{24}$`
 
@@ -232,7 +232,7 @@ This is a shortened example for Jormungan. Other raid-bosses follow the same str
 
 # Users Service
 
-provides access to register platform names and request known ones.
+Provides access to register platform names and request known ones.
 
 ## Add
 
@@ -242,7 +242,7 @@ A get-request to add a username, that is appended as the next "folder" in this r
 
 A get-request, that returns a list of users grouped by their kong-names. This is meant to be called multiple types to update the content on the client's side.
 
-A single user's data is grouped by his lower-case kongregate username and then in turn has a supobject for each server that he is on. These objects provide the following keys:
+A single user's data is grouped by his lower-case Kongregate username and then in turn has a sub-object for each server that he is on. These objects provide the following keys:
 
 - guildId : int : the id ugup gave the guid
 - id : int : the id of the user, needed to link to the profile for example
@@ -259,7 +259,7 @@ A single user's data is grouped by his lower-case kongregate username and then i
 
 ## Init
 
-Reduces pseudo-static data, that is not meant to be requeried. This is a list of guild names and class names.
+Reduces pseudo-static data, that is not meant to be re-queued. This is a list of guild names and class names.
 
 ### Example
 
@@ -267,9 +267,9 @@ Reduces pseudo-static data, that is not meant to be requeried. This is a list of
 
 # War Service
 
-The war service returns two different king of information, for one pure statistics and tipps, including magics to use, for each boss in the war and on the other hand war raids that a person wants to join.
+The War service returns two different kinds of information, for one pure statistics and tipps, including magics to use, for each boss in the War and on the other hand War raids that a person wants to join.
 
-The Information about what raids to join is supplied with an added path-part of comma seperated raid ids. Also the Idrinth-Addition-header is send with ids of already joined raids to reduce overhead.
+The information about what raids to join is supplied with an added path-part of comma-seperated raid ids. Also the Idrinth-Addition-header is send with ids of already joined raids to reduce overhead.
 
 ### Example
 
