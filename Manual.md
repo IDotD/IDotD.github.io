@@ -20,7 +20,7 @@
 
 * A chat system, that allows raid sharing to specific groups of people in private rooms and auto-pubbing those raids
 
-* An automatic raid-join service avaible on facebook, armorgames and kongregate(Attention, the facebook version needs iframes for that)
+* An automatic raid-join service available on facebook, armorgames and kongregate(Attention, the facebook version needs iframes for that)
 
 * You can see the basic ingame data of people chatting on Kong while on the Dawn of the Dragon's Game-Page
 
