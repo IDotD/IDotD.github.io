@@ -12,7 +12,7 @@
 
 # Basics
 
-## What does the script do ?
+## What does the script do?
 
 * A raid tier lookup based on data provided by Mutik ( thank you)
 
@@ -28,17 +28,17 @@
 
 * It provides a list of unjoined raids, which you can copy the links with a single click from ( ALL platforms)
 
-## Why use a raidcatcher ?
+## Why use a raidcatcher?
 
 Raidcatchers are helpful in multiple ways. They reduce the amount of time you need to spend asking for already known raids in the world chat, they provide you with a less click-intensive way of joining raids and reduce the amount of trains in the world chat, allowing for conversations to take place.
 
-## What other raidcatchers are there ?
+## What other raidcatchers are there?
 
 As far as I know there are two more authors for raid catchers at the moment. [Hesperus ](http://www.dawnofthedragons.com/forums/forums/showthread.php?42960-Hesperus-Raid-Conglomerator)has downloadable application for joining raids on pretty much any server, Mutik has a script for [Armorgames ](https://greasyfork.org/de/scripts/9868-mutik-s-dotd-script-for-armorgames) and one for [Kongregate ](https://greasyfork.org/de/scripts/406-mutik-s-dotd-script)doing the task.
 
 # Installation & Setup
 
-## A Monkey ?
+## A Monkey?
 
 As with any userscript you'll need a Monkey - if you installed mutik's script you already have one, otherwise use  [Tampermonkey(Chrome&Opera)](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=de), [Violentmonkey(Opera)](https://addons.opera.com/de/extensions/details/violent-monkey/) or [Greasemonkey(Firefox)](https://addons.mozilla.org/de/firefox/addon/greasemonkey/)  depending on the browser used.
 
@@ -48,7 +48,7 @@ To install the script you merely need to open it’s URL in the browser you inst
 
 Don’t be worried about the size of the script, since you are only installing a loader, that makes sure you can have an up to date version without needing to rely on luck when the monkeys update.
 
-## Where do I find it now ?
+## Where do I find it now?
 
 To have a userscript loaded, you will need to load the side it’s going to be used on, if it’s already open reload it, otherwise just open it normally.
 
@@ -62,7 +62,7 @@ You will find some grey boxes to the right:
 
 # Usual settings
 
-## Where is the settings window ?
+## Where is the settings window?
 
 The settings are in one of the tabs that show after left-clicking the bar with the version information. The settings differ a bit from platform to platform, since they are not all available due to differences in the page’s structure.
 
