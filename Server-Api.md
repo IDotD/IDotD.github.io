@@ -259,7 +259,7 @@ A single user's data is grouped by his lower-case Kongregate username and then i
 
 ## Init
 
-Reduces pseudo-static data, that is not meant to be re-queued. This is a list of guild names and class names.
+Reduces pseudo-static data, that is not meant to be requeried. This is a list of guild names and class names.
 
 ### Example
 
