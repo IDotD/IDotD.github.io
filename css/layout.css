@@ -3,6 +3,8 @@ body > div {
   max-width:1200px;
   width:80%;
   margin: 0 auto;
+  box-sizing:padding-box;
+  padding: 2px;
 }
 .wrapper {
   display:block;
