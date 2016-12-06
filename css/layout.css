@@ -6,21 +6,15 @@ body > div {
   box-sizing:padding-box;
   padding: 2px;
 }
-.wrapper {
+nav > ul > li {
+  display: block;
+  width:auto;
+  padding:3px;
+  float:right;
+}
+nav > ul {
   display:block;
-  width:100%;
-  height:auto;
   overflow:hidden;
-}
-.wrapper > * {
-  display:block;
-  float:left;
-  box-sizing:padding-box;
-  padding:2px;
-}
-.wrapper.c1-2 > * {
-  width:33%;
-}
-.wrapper.c1-2 > :nth-child(2) {
-  width:67%;
+  height:auto;
+  width:100%;
 }
