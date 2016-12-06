@@ -13,6 +13,7 @@ We got Slack available for questions and small talk, feel free to mail webmaster
 - static values via object or array and key instead of conditions where possible
 - opening and closing brackets are mandatory
 - refer to www.codacy.com and www.codeclimate.com as well
+
 <pre><code>{
     "tabs and indents":{
         "expand tabs to spaces":true,
