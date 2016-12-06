@@ -1,3 +1,7 @@
+---
+title: Developer Information
+layout: default
+---
 # Communication
 
 We got Slack available for questions and small talk, feel free to mail webmaster AT idrinth DOT de for an invitation.
