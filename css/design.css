@@ -24,7 +24,8 @@ a:active,
 a:focussed,
 a:hover {
   color: #222;
-  font-style: underline;
+  font-style: normal;
+  text-decoration: underline;
 }
 .dark a,
 .dark a:link,
