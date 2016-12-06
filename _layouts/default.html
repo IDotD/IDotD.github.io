@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="{{ site.baseurl }}/css/design.css" >
     </head>
     <body>
-        <div>
+        <div class="dark bar">
             <nav class="nav-primary" role="navigation" >
                 <ul>
                     {% for p in site.pages %}
@@ -19,8 +19,15 @@
             </nav>
         </div>
         <div>
+            <article>
                 <h1>{{ page.title }}</h1>
                 {{ content }}
+            </article>
+        <div>
+        <div class="dark bar">
+            <footer>
+                <p>Content is provided from <a href="https://github.com/IDotD/IDotD.github.io" target="_blank">github.com/IDotD/IDotD.github.io</a>, feel free to help.</p>
+            </footer>
         <div>
     </body>
 </html>
