@@ -1,3 +1,7 @@
+---
+title: Manual
+layout: default
+---
 # Content
 
 * [Content](#content)
