@@ -1,3 +1,7 @@
+---
+title: Server API
+layout: default
+---
 For the following API-calls assume lower case and spaces replaced by hyphens. URLs are therefore build starting with /[server] and adding in the headers related to the task, for example /kongregate/chat-service/update/ .
 
 # Chat Service
