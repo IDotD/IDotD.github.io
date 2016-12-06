@@ -21,3 +21,8 @@ nav > ul {
   margin:0;
   padding:1px;
 }
+pre {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    width: 100%;
+}
