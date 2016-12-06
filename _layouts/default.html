@@ -1,7 +1,21 @@
-{% include head.html %}
-
-    <h1>{{ page.title }}</h1>
-
-    {{ content }}
-
-{% include foot.html %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>{{ page.title }} | IDotD</title>
+        <link rel="stylesheet" href="{{ site.baseurl }}/css/layout.css" >
+    </head>
+    <body>
+        <div>
+            <div>
+                <h1>{{ page.title }}</h1>
+                {{ content }}
+            </div>
+            <div>
+                <ul>
+                    <li>Menu here</li>
+                </ul>
+            </div>
+        <div>
+    </body>
+</html>
