@@ -13,3 +13,11 @@ body > div {
 .bar {
   background-image: linear-gradient(top,rgba(255,255,255,0.3),rgba(255,255,255,0.2),rgba(0,0,0,0.1));
 }
+a {
+  color: #222;
+  font-style: underline;
+}
+.dark a {
+  color: #ddd;
+  font-style: underline;
+}
