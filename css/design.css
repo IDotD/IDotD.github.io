@@ -1,0 +1,7 @@
+body {
+  background: #eee;
+}
+body > div {
+  background: #fff;
+  border-radius: 3px;
+}
