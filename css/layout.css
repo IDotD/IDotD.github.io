@@ -4,3 +4,21 @@ body > div {
   width:80%;
   margin: 0 auto;
 }
+.wrapper {
+  display:block;
+  width:100%;
+  height:auto;
+  overflow:hidden;
+}
+.wrapper > * {
+  display:block;
+  float:left;
+  box-sizing:padding-box;
+  padding:2px;
+}
+.wrapper.c1-2 > * {
+  width:33%;
+}
+.wrapper.c1-2 > :nth-child(2) {
+  width:67%;
+}
