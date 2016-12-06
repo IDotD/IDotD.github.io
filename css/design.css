@@ -21,7 +21,7 @@ a,
 a:link,
 a:visited,
 a:active,
-a:focussed,
+a:focused,
 a:hover {
   color: #222;
   font-style: normal;
@@ -31,7 +31,7 @@ a:hover {
 .dark a:link,
 .dark a:visited,
 .dark a:active,
-.dark a:focussed,
+.dark a:focused,
 .dark a:hover  {
   color: #ddd;
 }
