@@ -11,13 +11,26 @@ body > div {
   color:#ddd;
 }
 .bar {
-  background-image: linear-gradient(top,rgba(255,255,255,0.3),rgba(255,255,255,0.2),rgba(0,0,0,0.1));
+  background-image: linear-gradient(to bottom,rgba(255,255,255,0.3),rgba(255,255,255,0.2),rgba(0,0,0,0.1));
 }
-a {
+.dark nav a {
+  background: rgba(255,255,255,0.4);
+  border-radius: 3px;
+}
+a,
+a:link,
+a:visited,
+a:active,
+a:focussed,
+a:hover {
   color: #222;
   font-style: underline;
 }
-.dark a {
+.dark a,
+.dark a:link,
+.dark a:visited,
+.dark a:active,
+.dark a:focussed,
+.dark a:hover  {
   color: #ddd;
-  font-style: underline;
 }
