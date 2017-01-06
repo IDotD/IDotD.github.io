@@ -12,7 +12,7 @@ We got Slack available for questions and small talk, feel free to mail webmaster
 - early returns instead of else
 - static values via object or array and key instead of conditions where possible
 - opening and closing brackets are mandatory
-- refer to www.codacy.com and www.codeclimate.com as well
+- refer to https://sideci.com as well
 
 <pre><code>{
     "tabs and indents":{
