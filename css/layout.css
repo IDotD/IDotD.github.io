@@ -5,6 +5,8 @@ body > div {
   margin: 0 auto;
   box-sizing: border-box;
   padding: 2px;
+  overflow:hidden;
+  height:auto;
 }
 nav > ul > li {
   display: block;
