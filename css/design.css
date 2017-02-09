@@ -22,6 +22,9 @@ body > div:last-of-type {
 .header {
   font-size:250%;
 }
+.header a {
+  text-decoration: none;
+}
 .header-note {
   font-size:85%;
 }
