@@ -6,6 +6,9 @@ body > div {
   color: #222;
   box-shadow: 3px 3px 12px #222;
 }
+img {
+  box-shadow: 3px 3px 12px #222;
+}
 body > div:first-of-type {
   border-radius: 5px 5px 0 0;
 }
