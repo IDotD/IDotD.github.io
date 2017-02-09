@@ -26,3 +26,12 @@ pre {
     overflow-y: hidden;
     width: 100%;
 }
+.header {
+  width:30%;
+  float:left;
+  min-width:150px;
+}
+.header-note {
+  width:auto;
+  float:right;
+}
