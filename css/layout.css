@@ -37,7 +37,7 @@ pre {
 }
 .header-note {
   width:auto;
-  float:right;
+  float:left;
 }
 article {
   min-height:200px;
