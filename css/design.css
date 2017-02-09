@@ -1,10 +1,16 @@
 body {
-  background: #bbb;
+  background: #eee;
 }
 body > div {
-  background: #ddd;
+  background: #eee;
   color: #222;
-  border-radius: 3px;
+  box-shadow: 3px 3px 12px #222;
+}
+body > div:first-of-type {
+  border-radius: 5px 5px 0 0;
+}
+body > div:last-of-type {
+  border-radius: 0 0 5px 5px;
 }
 .dark {
   background: #222;
