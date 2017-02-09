@@ -54,3 +54,6 @@ img {
     float: right;
     margin:3px;
 }
+nav a {
+padding:5px;
+}
