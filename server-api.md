@@ -4,37 +4,37 @@ layout: default
 ---
 For the following API-calls assume lower case and spaces replaced by hyphens. URLs are therefore build starting with /[server] and adding in the headers related to the task, for example /kongregate/chat-service/update/ .
 
-# Chat Service
+## Chat Service
 
 This group of services handles everything chat-related. These do return error-object with the keys success, message and possibly login.
 
 Success will be false in case of errors and if it is an error that will likely be solved by logging in again, login will be set to true.
 
-## Accounts
+### Accounts
 
 Get all required information about logged-in users, including yourself. This takes no additional payload of any kind.
 
 The members object contains the rank of each user, organised by chat and then user, while the users object contains a list of active platforms and the user's name.
 
-### Example
+#### Example
 
 Chat 17 with user 1:
 
 `{"self":1,"members":{17:{1:Owner}},"users":{1:{name:"Idrinth",platforms:{"k":true,"f":false,"a":false,"n":true}}}`
 
-### Other Responses
+#### Other Responses
 
 `{"success":false,"message":"please login again","login":true}`
 
-## Create
+### Create
 
 Creates a new chat with a random password and sets the creating user as chat-owner.
 
-### Example
+#### Example
 
 `Idrinth-Addition: my chat 9000`
 
-### Responses
+#### Responses
 
 `{"success":false,"message":"please login again"}`
 
@@ -42,11 +42,11 @@ Creates a new chat with a random password and sets the creating user as chat-own
 
 `{"success":true,"data":{name:"name",access:"Owner",pass:"pass"}`
 
-## Delete
+### Delete
 
 Takes the chat-id as the next path-part and deletes a chat if you are an Owner.
 
-### Responses
+#### Responses
 
 `{"success":false,"message":"please login again","login":true}`
 
@@ -56,15 +56,15 @@ Takes the chat-id as the next path-part and deletes a chat if you are an Owner.
 
 `{"success":true}`
 
-## Join
+### Join
 
 Sends chatjoin-data via the header Idrinth-addition and gets the necessary data back to build the chat-gui if sucessfull.
 
-### Example
+#### Example
 
 `Idrinth-Addition: {"id":"22","pass":"halloWelt"}`
 
-### Responses
+#### Responses
 
 `{"success":false,"message":"please login again","login":true}`
 
@@ -78,15 +78,15 @@ Sends chatjoin-data via the header Idrinth-addition and gets the necessary data 
 
 `{"success":false,"message":"Password and ID do not match"}`
 
-## Login
+### Login
 
 A query containing a username and password in the Idrinth-Addition-header.
 
-### Example
+#### Example
 
 `Idrinth-Addition: {"user":"Tester","pass":"Password"}`
 
-### Responses
+#### Responses
 
 `{"success":false,"message":"data not provided, either username or password is empty"}`
 
@@ -96,15 +96,15 @@ A query containing a username and password in the Idrinth-Addition-header.
 
 `{"success":true,"data":MyChats()}`
 
-## My chats
+### My chats
 
 Returns a list of all allowed chats with their names and passwords.
 
-### Example
+#### Example
 
 `{"1":{"access":"User","pass":"Hallo","name":"World"}}`
 
-## Rank
+### Rank
 
 Changes the rank of a specific user in a specific chat. Chat and user to be changed need to be submitted as a json encoded value of the header Idrinth-Addition.
 
@@ -115,11 +115,11 @@ Possible ranks are:
 - Mod
 - Owner
 
-### Example:
+#### Example:
 
 `Idrinth-Addition: {"user":1,chat:"1","access":""}`
 
-### Responses
+#### Responses
 
 `{"success":false,"message":"please login again","login":true}`
 
@@ -129,15 +129,15 @@ Possible ranks are:
 
 `{"success":true,"message":"User's rights changed"}`
 
-## Register
+### Register
 
 A query containing a username and password in the Idrinth-Addition-header.
 
-### Example
+#### Example
 
 `Idrinth-Addition: {"user":"Tester","pass":"Password"}`
 
-### Responses
+#### Responses
 
 `{"success":true,"data":MyChats()}`
 
@@ -147,15 +147,15 @@ A query containing a username and password in the Idrinth-Addition-header.
 
 `{"success":false,"message":"The given login already exists, please choose another one"}`
 
-## Update
+### Update
 
 This handles the sending of new messages as well as retrieving messages send by others. The first are send as a json object of messages per chat, while the later is handled with sending the highest known message id.
 
-### Example
+#### Example
 
 `Idrinth-Addition: {"messages":[{"chat":1,"text":"Hi, anyone around?"}],"maxId":111}`
 
-### Responses
+#### Responses
 
 `{"success":false,"message":"please login again","login":true)`
 
@@ -163,15 +163,15 @@ This handles the sending of new messages as well as retrieving messages send by 
 
 `{"messages":{"1":{"112":{"time" => "2016-07-25 15:09:08","user":1,"text":"Hi, anyone around?"}}}}`
 
-## Whisper
+### Whisper
 
 The whisper service takes a json-object wrapped in a post request.
 
-### Example
+#### Example
 
 `{"messages":[{"to":333,"message":"you there?"}],"akn:[1,3,4,55,6]}`
 
-### Responses
+#### Responses
 
 `{"success":false,"message":"please login again","login":true)`
 
@@ -179,7 +179,7 @@ The whisper service takes a json-object wrapped in a post request.
 
 `[{"id":11,created:"2016-08-01 00:01:09","from":333,"message":"yes..."},{"id":23,created:"2016-08-01 00:01:09","from":23,"message":"could you kill your jorm please? it's full."}]`
 
-# Raid Service
+## Raid Service
 
 
 The information about what raids to join is supplied with an added path-part of comma seperated favorite-ids. Also the Idrinth-Addition-header is send with ids of already joined raids to reduce overhead.
@@ -202,13 +202,13 @@ URL: `https://dotd.idrinth.de/kongregate/raid-service/1,3,99/`
 
 `{"12345":{"difficulty":1,"name":"MySummoner","raid":"Horgrak","aid":12345,"raidId":889,"hash":"wx9g"}}`
 
-# I am alive
+## I am alive
 
 A single call for tracking purposes, to see if there's anyone using the script. It takes a pseudo UUID as the next part of the path and returns nothing. UUIDs are checked to match the following regex:
 
 `^[a-z0-9]{4}-[a-z0-9]{8}-[a-z0-9]{12}-[a-z0-9]{16}-[a-z0-9]{20}-[a-z0-9]{24}$`
 
-# Tiers Service
+## Tiers Service
 
 Provides all raid's tier data in a json object of raid-objects. This is a GET request, that does not take any additional parameters.
 
@@ -228,21 +228,21 @@ On the upper level each objects provides the following fields:
 - ap : int : the ap-value
 - types : string[] : the names of the types a boss has
 
-## Example:
+### Example:
 
 This is a shortened example for Jormungan. Other raid-bosses follow the same structure.
 
 `{"jormungan the sea-storm":{"name":"Jormungan the Sea-Storm","url":"jormungan-294","n":[200000000,100000000000],"os":{"n":3000000000,"h":3000000000,"l":3000000000,"nm":3000000000},"fs":{"n":937500000,"h":1875000000,"l":2812500000,"nm":3750000000},"epics":{"n":["0","400"],"h":["0","400"],"l":["0","400"],"nm":["0","400"]},"h":[200000000,100000000000],"l":[200000000,100000000000],"nm":[200000000,100000000000],"ap":1875000000,"types":["dragon","aquatic"]}}`
 
-# Users Service
+## Users Service
 
 Provides access to register platform names and request known ones.
 
-## Add
+### Add
 
 A get-request to add a username, that is appended as the next "folder" in this request. Does not return anything.
 
-## Get
+### Get
 
 A get-request, that returns a list of users grouped by their kong-names. This is meant to be called multiple types to update the content on the client's side.
 
@@ -257,19 +257,19 @@ A single user's data is grouped by his lower-case Kongregate username and then i
 - 7day: int : levels gained during the last 7 days
 - 30day: int : levels gained during the last 30 days
 
-### Example
+#### Example
 
 `{"bjalpha":{"kongregate":{"guildId":"645","id":"27341","level":"2658","updated":"2016-07-24 16:07:01","class":"12","name":"Idrinth","7day":"31","30day":"344"},"world":{"guildId":"0","id":"39135125","level":"7","updated":"2016-07-25 07:52:01","class":"3","name":"i","7day":"0","30day":"0"}}}` 
 
-## Init
+### Init
 
 Reduces pseudo-static data, that is not meant to be requeried. This is a list of guild names and class names.
 
-### Example
+#### Example
 
 `{"classes":{"4":"Adventurer"},"guilds":{"kongregate":{"0":"[Sytem:Guildless]"},"world":{"0":"[System Guildless""}}}`
 
-# War Service
+## War Service
 
 The War service returns two different kinds of information, for one pure statistics and tipps, including magics to use, for each boss in the War and on the other hand War raids that a person wants to join.
 
@@ -291,7 +291,7 @@ URL: `https://dotd.idrinth.de/kongregate/war-service/1,3,99/`
 
 `{"raids:{"12345":{"difficulty":1,"name":"MySummoner","raid":"Horgrak","aid":12345,"raidId":889,"hash":"wx9g"}},"stats":{"1":{"boss":1,"amount":678,"name":"Horgrak","magics":"blinding_light-125,dragons_breath-93"}}}`
 
-# Add Raid Service
+## Add Raid Service
 
 The add raid service provides a simple option to submit raids without having to enter chats. The id and hash need to be added to the url.
 
