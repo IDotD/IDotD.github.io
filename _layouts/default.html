@@ -18,9 +18,11 @@
                     <li><a style="background: rgba(0, 255, 0, 0.4);" href="https://dotd.idrinth.de/idrinth-dotd-script.user.js">Install Userscript</a></li>
                     {% for p in site.pages %}
                         {% unless p.url == '/' %}
+                        {% unless p.url == '/assets/css/style.css' %}
                             <li>
                                 <a {% if p.url == page.url %}class="active"{% endif %} href="{{ site.baseurl }}{{ p.url }}">{{ p.title }}</a>
                             </li>
+                        {% endunless %}
                         {% endunless %}
                     {% endfor %}
                     <li><a href="{{ site.baseurl }}/">Manual</a></li>
