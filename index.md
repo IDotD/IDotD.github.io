@@ -68,9 +68,7 @@ You will find some grey boxes to the right:
 
 ### Where is the settings window?
 
-The settings are in one of the tabs that show after left-clicking the bar with the version information. The settings differ a bit from platform to platform, since they are not all available due to differences in the page’s structure.
-
-![Settings](Images/settings.png)
+The settings are in one of the tabs that show after left-clicking the bar with the version information. The settings differ a bit from platform to platform, since they are not all available due to differences in the page’s structure. ![Settings](Images/settings.png)
 
 The following settings are currently available:
 
