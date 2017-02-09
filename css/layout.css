@@ -46,6 +46,19 @@ h1,h2,h3,h4,h5,p {
 }
 h1,h2,h3,h4,h5 {
   clear:both;
+  box-sizing: border-box;
+}
+h2 {
+  padding-left:0.3em;
+}
+h3 {
+  padding-left:0.6em;
+}
+h4 {
+  padding-left:0.9em;
+}
+h5 {
+  padding-left:1.2em;
 }
 img {
     max-width: 100%;
