@@ -8,6 +8,7 @@ body > div {
 }
 img {
   box-shadow: 3px 3px 12px #222;
+  border-radius:6px;
 }
 body > div:first-of-type {
   border-radius: 5px 5px 0 0;
