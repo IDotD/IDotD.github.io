@@ -4,7 +4,7 @@ body > div {
   width:80%;
   margin: 0 auto;
   box-sizing: border-box;
-  padding: 2px;
+  padding: 5px;
   overflow:hidden;
   height:auto;
 }
