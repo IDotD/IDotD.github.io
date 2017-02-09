@@ -18,7 +18,7 @@ layout: default
 
 ### What does the script do?
 
-* A raid tier lookup based on data provided by Mutik ( thank you)
+* A raid tier lookup partly based on data provided by Mutik ( thank you)
 
 * A land buy calculator with different options ( don't waste money vs buy as much as possible)
 
@@ -26,11 +26,13 @@ layout: default
 
 * An automatic raid-join service available on Facebook, Armorgames and Kongregate ( Attention, the Facebook version needs Iframes for doing so)
 
-* You can see the basic ingame data of people chatting on Kong while on the Dawn of the Dragon's Game-Page
+* You can see the basic ingame data of people chatting on Kong while on the Dawn of the Dragon's Game-Page ![User data](Images/users.png)
 
 * You help adding to known Kongregate names, improving the [Search](http://dotd.idrinth.de/kongregate/platform/) and increasing the amount of people that will show you their ingame Profile
 
 * It provides a list of unjoined raids, which you can copy the links with a single click from ( ALL platforms)
+
+* War Event support ![War dashboard](Images/WAR-dashboard.png)
 
 ### Why use a raidcatcher?
 
@@ -60,15 +62,15 @@ You will find some grey boxes to the right:
 
 * A bar with the version number containing all of the raid catching parts and most tools
 
-* An open login window for the chat shipping with the raidcatcher
-
-* A button to minimize the chat
+* A button to toggle the chat
 
 ## Usual settings
 
 ### Where is the settings window?
 
 The settings are in one of the tabs that show after left-clicking the bar with the version information. The settings differ a bit from platform to platform, since they are not all available due to differences in the page’s structure.
+
+![Settings](Images/settings.png)
 
 The following settings are currently available:
 
