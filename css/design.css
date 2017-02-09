@@ -19,15 +19,6 @@ body > div:last-of-type {
 .bar {
   background-image: linear-gradient(to bottom,rgba(255,255,255,0.3),rgba(255,255,255,0.2),rgba(0,0,0,0.1));
 }
-.header {
-  font-size:150%;
-}
-.header a {
-  text-decoration: none;
-}
-.header-note {
-  font-size:85%;
-}
 .dark nav a {
   background: rgba(255,255,255,0.4);
   border-radius: 3px;
@@ -39,8 +30,6 @@ a:active,
 a:focus,
 a:hover {
   color: #222;
-  font-style: normal;
-  text-decoration: underline;
 }
 .dark a,
 .dark a:link,
