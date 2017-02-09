@@ -39,3 +39,6 @@ pre {
   width:auto;
   float:right;
 }
+article {
+  min-height:200px;
+}
