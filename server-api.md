@@ -226,7 +226,7 @@ On the upper level each objects provides the following fields:
 - os : int{} : optimal share values for each difficulty
 - fs : int{} : fair share for each difficulty
 - fsOs : int{} : best tier after fair share
-- loot: int{} : Common,Uncommon,Legendary,Epic,Stats
+- loot: int{} : Common,Uncommon,Rare,Epic,Stats
 - ap : int : the ap-value
 - types : string[] : the names of the types a boss has
 
