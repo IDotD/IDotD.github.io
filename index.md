@@ -34,6 +34,8 @@ layout: default
 
 * War Event support ![War dashboard](Images/WAR-dashboard.png)
 
+* Automatic joining of raids posted in the kongregate chats
+
 ### Why use a raidcatcher?
 
 Raidcatchers are helpful in multiple ways. They reduce the amount of time you need to spend asking for already known raids in the world chat, they provide you with a less click-intensive way of joining raids and reduce the amount of trains in the world chat, allowing for conversations to take place.
