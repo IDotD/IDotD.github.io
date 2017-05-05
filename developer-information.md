@@ -11,7 +11,7 @@ We got Slack available for questions and small talk, feel free to mail webmaster
 - early returns over continue
 - early returns instead of else
 - static values via object or array and key instead of conditions where possible
-- using (prettier)[https://github.com/prettier/prettier] via (automatic formatting)[https://github.com/Idrinth/automatic-formatting/], following it's style is appreciated
+- using [prettier](https://github.com/prettier/prettier) via [automatic formatting](https://github.com/Idrinth/automatic-formatting/), following it's style is appreciated
 
 ## Commits
 
