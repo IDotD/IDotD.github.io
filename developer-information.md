@@ -19,7 +19,7 @@ We got Slack available for questions and small talk, feel free to mail webmaster
 - Commit with "Fixes #[ticket]" so the commits are automatically listed in the ticket
 - Test the changes yourself and fix any bugs you might encounter in your branch
 - Check your branch with www.codacy.com and/or www.codeclimate.com if it introduces more issues than it solves
-- Create a pull-request and let someone have a look
+- Create a pull-request and let someone have a look - automatic formatting might happen now if you didn't follow the codestyle
 - Valid comments to allow a commit are ":shipit:", ":+1:", "LGTM", "Approved", "Looks Good To Me". They need to be positioned first to be recognised
 - When accepting the pull-request all related tickets are closed
 
