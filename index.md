@@ -48,7 +48,9 @@ As far as I know there are two more authors for raid catchers at the moment. [He
 
 ### A Monkey?
 
-As with any userscript you'll need a Monkey - if you installed mutik's script you already have one, otherwise use  [Tampermonkey(Chrome&Opera)](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=de), [Violentmonkey(Opera)](https://addons.opera.com/de/extensions/details/violent-monkey/) or [Greasemonkey(Firefox)](https://addons.mozilla.org/de/firefox/addon/greasemonkey/)  depending on the browser used.
+As with any userscript you'll need a Monkey - if you installed mutik's script you already have one, otherwise use  [Tampermonkey(Chrome&Opera)](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=de), [Violentmonkey(Opera)](https://addons.opera.com/de/extensions/details/violent-monkey/) or [Tampermonkey(Firefox)](https://addons.mozilla.org/de/firefox/addon/tampermonkey/) depending on the browser used.
+
+Currently [Greasemonkey(Firefox)](https://addons.mozilla.org/de/firefox/addon/greasemonkey/) seems to fail joining raids on Firefox, so we'd propose switching to the [Tampermonkey(Firefox)](https://addons.mozilla.org/de/firefox/addon/tampermonkey/).
 
 ### Installing the script
 
